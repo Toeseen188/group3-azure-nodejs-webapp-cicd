@@ -99,7 +99,7 @@ nav {
   box-shadow: var(--shadow);
 }
 .brand b { background: linear-gradient(90deg, var(--accent), var(--gold)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.nav-links { display: flex; align-items: center; gap: 1.4rem; }
+.nav-links { display: flex; align-items: center; gap: 1.4rem; justify-content: center; margin: 0 auto; }
 .nav-links a {
   color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.95rem;
   padding: 0.4rem 0.2rem; position: relative;
