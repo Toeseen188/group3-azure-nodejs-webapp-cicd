@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Haven · Group 3</title>
+  <meta name="description" content="Group 3 Cloud Development final project — a heavenly tour of the cloud, built with HTML, CSS & Node.js." />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>" />
+</head>
+<body>
+  <div class="cloud-field"></div>
+
+  <nav>
+    <a href="/" class="brand" style="text-decoration:none;color:inherit">
+      <span class="logo">☁️</span> Cloud<b>Haven</b>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="active"><span class="label">Home</span> 🏠</a>
+      <a href="/about"><span class="label">About</span> 👥</a>
+      <a href="#providers"><span class="label">Providers</span> ⛅</a>
+      <a href="#why"><span class="label">Why Cloud</span> 🌤️</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">☀️</button>
+    </div>
+  </nav>
+
+  <div class="marquee">
+    <div>
+      <span>☁️ There is space for everyone in the cloud ☁️</span><span>AWS · AZURE · GCP</span>
+      <span>Built with Node.js</span><span>Group 3 · Cloud Development</span>
+      <span>☁️ There is space for everyone in the cloud ☁️</span><span>AWS · AZURE · GCP</span>
+      <span>Built with Node.js</span><span>Group 3 · Cloud Development</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="halo">☁️</div>
+      <span class="eyebrow">Group 3 · Final Project</span>
+      <h1>Welcome to <span class="gradient-text">Cloud Haven</span></h1>
+      <p class="lead" style="margin: 0 auto;">
+        A heavenly home above the clouds — where our team builds the future on
+        the world's greatest cloud platforms. Crafted with HTML, CSS &amp; Node.js.
+      </p>
+      <div class="btn-row">
+        <a href="#providers" class="btn btn-primary">Explore the Clouds ⛅</a>
+        <a href="/about" class="btn btn-ghost">Meet the Crew 👥</a>
+      </div>
+    </section>
+
+    <!-- PROVIDER CAROUSEL -->
+    <section id="providers" class="wrap">
+      <div style="text-align:center; margin-bottom:2.2rem;">
+        <span class="eyebrow">The Major Clouds</span>
+        <h2>Three Pillars of the <span class="gradient-text">Sky</span></h2>
+        <p class="lead" style="margin: 0 auto;">The cloud giants powering the modern internet.</p>
+      </div>
+      <div class="carousel">
+        <button id="prev" class="car-btn car-prev" aria-label="Previous">‹</button>
+        <div id="slides" class="slides">
+          <div class="loading">Loading providers from Node…</div>
+        </div>
+        <button id="next" class="car-btn car-next" aria-label="Next">›</button>
+      </div>
+      <div id="dots" class="dots"></div>
+    </section>
+
+    <!-- WHY CLOUD — real-life cloud reference as columns -->
+    <section id="why" class="wrap">
+      <div style="text-align:center; margin-bottom:2.2rem;">
+        <span class="eyebrow">Real Clouds, Real Power</span>
+        <h2>Why We Live in the <span class="gradient-text">Clouds</span></h2>
+      </div>
+      <div class="columns">
+        <div class="col-card"><div class="ico">🌧️</div><h3>Elastic Like Rain</h3><p>Scale up in a storm, scale down in calm weather — pay only for the drops you use.</p></div>
+        <div class="col-card"><div class="ico">⛅</div><h3>Always Overhead</h3><p>Reliable cloud cover across the globe — 99.99% uptime, everywhere at once.</p></div>
+        <div class="col-card"><div class="ico">🌩️</div><h3>Striking Speed</h3><p>Deploy at the speed of lightning with CI/CD pipelines straight to the cloud.</p></div>
+        <div class="col-card"><div class="ico">🌈</div><h3>Clear Skies Ahead</h3><p>Secure, compliant, and resilient — fair weather for every workload.</p></div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="wrap">
+      <div class="stats">
+        <div class="stat"><b>3</b><span>Cloud Giants</span></div>
+        <div class="stat"><b id="memberStat">12+</b><span>Team Members</span></div>
+        <div class="stat"><b>100%</b><span>Cloud Native</span></div>
+        <div class="stat"><b>☁️</b><span>Built to Soar</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="brand"><span class="logo">☁️</span> Cloud<b>Haven</b></div>
+      <p>Group 3 · Cloud Development Final Project — HTML · CSS · Node.js</p>
+      <p style="margin-top:0.4rem; font-size:0.85rem;">Hosted in the heavens. There is space for everyone in the cloud. ☁️</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

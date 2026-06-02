@@ -1,0 +1,23 @@
+{
+  "name": "group3-cloud-haven",
+  "version": "1.0.0",
+  "description": "Heavenly cloud-themed web app for Group 3 - Cloud Development final project (HTML, CSS, Node.js).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "cloud",
+    "aws",
+    "azure",
+    "gcp",
+    "nodejs",
+    "express"
+  ],
+  "author": "Group 3 - Cloud Development",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

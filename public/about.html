@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About · Cloud Haven · Group 3</title>
+  <meta name="description" content="Meet the crew of Group 3 — the builders behind Cloud Haven." />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>" />
+</head>
+<body>
+  <div class="cloud-field"></div>
+
+  <nav>
+    <a href="/" class="brand" style="text-decoration:none;color:inherit">
+      <span class="logo">☁️</span> Cloud<b>Haven</b>
+    </a>
+    <div class="nav-links">
+      <a href="/"><span class="label">Home</span> 🏠</a>
+      <a href="/about" class="active"><span class="label">About</span> 👥</a>
+      <a href="#crew"><span class="label">The Crew</span> ⛅</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">☀️</button>
+    </div>
+  </nav>
+
+  <div class="marquee">
+    <div>
+      <span>👥 Meet the crew of Cloud Haven 👥</span><span>Builders · Believers · Dreamers</span>
+      <span>There is space for everyone in the cloud</span>
+      <span>👥 Meet the crew of Cloud Haven 👥</span><span>Builders · Believers · Dreamers</span>
+      <span>There is space for everyone in the cloud</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- ABOUT HERO -->
+    <section class="hero wrap">
+      <div class="halo">👥</div>
+      <span class="eyebrow">About Us</span>
+      <h1>The Crew Behind <span class="gradient-text">Cloud Haven</span></h1>
+      <p class="lead" style="margin: 0 auto;">
+        We are <b id="teamCount">a</b> teammates of Group 3 — a flock of cloud
+        builders, believers, and dreamers. Each of us tends a different corner of
+        the sky, but together we are one heavenly crew building on AWS, Azure &amp; GCP.
+      </p>
+    </section>
+
+    <!-- MISSION columns (real-life cloud reference) -->
+    <section class="wrap">
+      <div class="columns">
+        <div class="col-card"><div class="ico">🌥️</div><h3>Our Sky</h3><p>We unite across three clouds — AWS, Azure, and GCP — and treat the whole sky as our playground.</p></div>
+        <div class="col-card"><div class="ico">🛠️</div><h3>Our Craft</h3><p>From pipelines to pixels, we build full-stack cloud-native apps with Node.js at the core.</p></div>
+        <div class="col-card"><div class="ico">🚀</div><h3>Our Mission</h3><p>To launch this final project into the heavens — and to grow into the cloud engineers of tomorrow.</p></div>
+      </div>
+    </section>
+
+    <!-- TEAM GRID (populated from Node API) -->
+    <section id="crew" class="wrap">
+      <div style="text-align:center; margin-bottom:2.2rem;">
+        <span class="eyebrow">The Flock</span>
+        <h2>Meet the <span class="gradient-text">Team</span></h2>
+        <p class="lead" style="margin: 0 auto;">Tip: edit <b>data.js</b> to drop in everyone's real names &amp; roles.</p>
+      </div>
+      <div id="teamGrid" class="team-grid">
+        <div class="loading">Loading the crew from Node…</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="brand"><span class="logo">☁️</span> Cloud<b>Haven</b></div>
+      <p>Group 3 · Cloud Development Final Project — HTML · CSS · Node.js</p>
+      <p style="margin-top:0.4rem; font-size:0.85rem;">There is space for everyone in the cloud. ☁️</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
