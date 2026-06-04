@@ -56,11 +56,11 @@ const providers = [
 // "//" in front of the photo line and put your file name between the quotes.
 const team = [
   {
-    name: "Member One",
-    role: "Project Lead / Cloud Architect",
-    bestCP: "Azure",                       // your pick for best cloud provider
-    // photo: "member-one.jpg",            // <- remove the // and use your file name in public/assets/team/
-    bio: "Hi! I'm Member One and I lead the crew. Replace this whole bio with your own story — up to 150 words. Tell us your background, what you study, what part of the project you worked on, your skills, hobbies, and anything else you'd like the world to know. There is space for everyone in the cloud!"
+    name: "Austine Timothy Friday",
+    role: "Project Lead / Cloud Security Engineer",
+    bestCP: "AWS",                       // your pick for best cloud provider
+    photo: "tim_pic.png",            // <- remove the // and use your file name in public/assets/team/
+    bio: "Hi! I'm Austine Timothy, the Team Lead for Group 3, Cohort 6 at TechCrush. I am a Final Year Engineering Student at Lagos State University. I enthusiastically joined TechCrush Cloud Computing Bootcamp in March this year, and I'm happy to share that I have not only learnt how to provision resources in the cloud but also learnt the architecture of the cloud environment as well. As the group lead, I am responsible for the automation of the deployment of our application into the cloud. I am skilled in software engineering, cybersecurity and cloud security. I enjoy quiet times and watching movies. Yes! There is space for everyone in the cloud."
   },
   {
     name: "Member Two",
