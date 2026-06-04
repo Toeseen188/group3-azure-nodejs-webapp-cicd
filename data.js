@@ -74,7 +74,7 @@ const team = [
     role: 'Backend Developer (Java)',
     bestCP: 'Azure',
     photo: 'Emma.png',
-    bio: 'A software engineer with a background in Java and a focus on backend systems',
+    bio: 'A software engineer with a background in Java and a focus on backend systems.',
   },
   {
     name: 'Member Four',
