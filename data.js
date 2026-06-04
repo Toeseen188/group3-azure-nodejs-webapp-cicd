@@ -87,11 +87,16 @@ const team = [
     name: "Adedolapo Oladapo",
     role: "Cloud Security Specialist",
     bestCP: "Azure",
-    photo: "assests/team/adedolapo.png",           // <- remove the // and use your file name in public/assets/team/
+    photo: "adedolapo.png",           // <- remove the // and use your file name in public/assets/team/
     bio: "Assistant Team Lead with contribution to the planning and deployment of Azure cloud infastructure,resource group creation and effective team collaboration"
-    
-    
+  },
+  {
   
+    name: "kolawole Joshua",
+    role: "Software Developer II",
+    bestCP: "AWS",
+    photo: "Joshua1.png",           // <- remove the // and use your file name in public/assets/team/
+   bio: "I am a Software Engineering student at the Federal University of Technology, Akure (FUTA), with a strong foundation in full-stack development and database systems. I am currently specializing in Cloud Computing through the Tech4Africans program, deepening my expertise in scalable, production-grade infrastructure. Alongside my academic work, I actively explore Blockchain and Web3 ecosystems — building tools that sit at the intersection of AI and decentralized applications. My hands-on experience includes developing MCP (Model Context Protocol) server integrations with crypto-native platforms such as Bags.fm and Celo." 
   },
   {
     name: "Member Six",
