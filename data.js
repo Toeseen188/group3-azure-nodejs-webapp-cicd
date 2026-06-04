@@ -63,11 +63,11 @@ const team = [
     bio: "Hi! I'm Member One and I lead the crew. Replace this whole bio with your own story — up to 150 words. Tell us your background, what you study, what part of the project you worked on, your skills, hobbies, and anything else you'd like the world to know. There is space for everyone in the cloud!",
   },
   {
-    name: 'Member Two',
-    role: 'DevOps Engineer',
+    name: 'Hammed Tosin',
+    role: 'Software Engineer I',
     bestCP: 'Azure',
-    // photo: "member-two.jpg",            // <- remove the // and use your file name in public/assets/team/
-    bio: 'Replace me with your own bio (up to 150 words).',
+    photo: "tosin.png",            // <- remove the // and use your file name in public/assets/team/
+    bio: "Software Engineer and Backend Developer passionate about building scalable systems and intelligent applications. I have a strong interest in AI and machine learning, and I enjoy exploring how technology can solve real-world problems. Beyond coding, I am also a writer who loves sharing ideas, insights, and knowledge about software engineering, AI, and innovation."
   },
   {
     name: 'Emmanuel Oyakhire',
