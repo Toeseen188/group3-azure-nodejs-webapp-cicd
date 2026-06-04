@@ -84,6 +84,14 @@ const team = [
     bio: "Replace me with your own bio (up to 150 words)."
   },
   {
+    name: "Adedolapo Oladapo",
+    role: "Cloud Security Specialist",
+    bestCP: "Azure",
+    photo: "adedolapo.png",           // <- remove the // and use your file name in public/assets/team/
+    bio: "Assistant Team Lead with contribution to the planning and deployment of Azure cloud infastructure,resource group creation and effective team collaboration"
+  },
+  {
+  
     name: "kolawole Joshua",
     role: "Software Developer II",
     bestCP: "AWS",
