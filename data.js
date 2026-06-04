@@ -88,10 +88,7 @@ const team = [
     role: "Software Developer II",
     bestCP: "AWS",
     photo: "Joshua1.png",           // <- remove the // and use your file name in public/assets/team/
-    bio: `I am a Software Engineering student at the Federal University of Technology, Akure (FUTA), with a strong foundation in full-stack development and database systems.
-I am currently specializing in Cloud Computing through the Tech4Africans program, deepening my expertise in scalable, production-grade infrastructure.
-Alongside my academic work, I actively explore Blockchain and Web3 ecosystems  building tools that sit at the intersection of AI and decentralized applications.
-My hands-on experience includes developing MCP (Model Context Protocol) server integrations with crypto-native platforms such as Bags.fm and Celo.`
+   bio: "I am a Software Engineering student at the Federal University of Technology, Akure (FUTA), with a strong foundation in full-stack development and database systems. I am currently specializing in Cloud Computing through the Tech4Africans program, deepening my expertise in scalable, production-grade infrastructure. Alongside my academic work, I actively explore Blockchain and Web3 ecosystems — building tools that sit at the intersection of AI and decentralized applications. My hands-on experience includes developing MCP (Model Context Protocol) server integrations with crypto-native platforms such as Bags.fm and Celo." 
   },
   {
     name: "Member Six",
