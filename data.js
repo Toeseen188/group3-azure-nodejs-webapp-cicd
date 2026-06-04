@@ -84,11 +84,14 @@ const team = [
     bio: "Replace me with your own bio (up to 150 words)."
   },
   {
-    name: "Member Five",
-    role: "Cloud Security Analyst",
+    name: "Adedolapo Oladapo",
+    role: "Cloud Security Specialist",
     bestCP: "Azure",
-    // photo: "member-five.jpg",           // <- remove the // and use your file name in public/assets/team/
-    bio: "Replace me with your own bio (up to 150 words)."
+    photo: "assests/team/adedolapo.png",           // <- remove the // and use your file name in public/assets/team/
+    bio: "Assistant Team Lead with contribution to the planning and deployment of Azure cloud infastructure,resource group creation and effective team collaboration"
+    
+    
+  
   },
   {
     name: "Member Six",
