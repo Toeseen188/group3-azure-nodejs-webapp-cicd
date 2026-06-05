@@ -100,18 +100,18 @@ const team = [
    bio: "I am a Software Engineering student at the Federal University of Technology, Akure (FUTA), with a strong foundation in full-stack development and database systems. I am currently specializing in Cloud Computing through the Tech4Africans program, deepening my expertise in scalable, production-grade infrastructure. Alongside my academic work, I actively explore Blockchain and Web3 ecosystems — building tools that sit at the intersection of AI and decentralized applications. My hands-on experience includes developing MCP (Model Context Protocol) server integrations with crypto-native platforms such as Bags.fm and Celo." 
   },
   {
-    name: 'Member Six',
-    role: 'Database Administrator',
+    name: 'Daniel Adejumo',
+    role: 'CI/CD Engineer',
     bestCP: 'Azure',
-    // photo: "member-six.jpg",            // <- remove the // and use your file name in public/assets/team/
+    photo: "member-six.jpg",            // <- remove the // and use your file name in public/assets/team/
     bio: 'Replace me with your own bio (up to 150 words).',
   },
   {
     name: 'Member Seven',
     role: 'QA / Test Engineer',
     bestCP: 'Azure',
-    // photo: "member-seven.jpg",          // <- remove the // and use your file name in public/assets/team/
-    bio: 'Replace me with your own bio (up to 150 words).',
+    // photo: "Daniel_Fiwa.jpg",          // <- remove the // and use your file name in public/assets/team/
+    bio: 'Agricultural and Environmental Engineer with interest in precision agriculture, machine design, and food systems. Currently building skills in cloud computing, python programming, and project writing. I am focused on creating impactful systems that improve agricultural productivity, support rural development, and advance sustainable industrial growth in Nigeria and beyond.',
   },
   {
     name: 'Member Eight',
