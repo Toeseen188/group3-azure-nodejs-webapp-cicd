@@ -78,11 +78,11 @@ const team = [
     bio: 'A software engineer with a background in Java and a focus on backend systems.',
   },
   {
-    name: 'Member Four',
-    role: 'Frontend Developer',
-    bestCP: 'Azure',
-    // photo: "member-four.jpg",           // <- remove the // and use your file name in public/assets/team/
-    bio: 'Replace me with your own bio (up to 150 words).',
+    name: 'Joshua Oneshioagbe',
+    role: 'DevOps Engineer',
+    bestCP: 'AWS',
+    photo: "Joshua_pic.jpg",           // <- remove the // and use your file name in public/assets/team/
+    bio: 'DevOps Engineer passionate about building reliable, scalable, and secure infrastructure. I have a strong interest in cloud computing, automation, networking, and modern DevOps practices, with hands-on experience in Linux, virtualization, CI/CD, and system administration.',
   },
   {
     name: "Adedolapo Oladapo",
