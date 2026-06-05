@@ -103,14 +103,14 @@ const team = [
     name: 'Daniel Adejumo',
     role: 'CI/CD Engineer',
     bestCP: 'Azure',
-    photo: "member-six.jpg",            // <- remove the // and use your file name in public/assets/team/
+    photo: "Daniel_Fiwa.jpg",            // <- remove the // and use your file name in public/assets/team/
     bio: 'Replace me with your own bio (up to 150 words).',
   },
   {
     name: 'Member Seven',
     role: 'QA / Test Engineer',
     bestCP: 'Azure',
-    // photo: "Daniel_Fiwa.jpg",          // <- remove the // and use your file name in public/assets/team/
+    // photo: "member-seven.jpg",          // <- remove the // and use your file name in public/assets/team/
     bio: 'Agricultural and Environmental Engineer with interest in precision agriculture, machine design, and food systems. Currently building skills in cloud computing, python programming, and project writing. I am focused on creating impactful systems that improve agricultural productivity, support rural development, and advance sustainable industrial growth in Nigeria and beyond.',
   },
   {
