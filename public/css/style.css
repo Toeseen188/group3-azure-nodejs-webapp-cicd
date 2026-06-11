@@ -140,6 +140,18 @@ nav {
   .nav-links.open { max-height: 360px; padding: 0.6rem 1rem 0.9rem; }
   .nav-links a { padding: 0.8rem 0.6rem; display: block; border-radius: 8px; margin: 0.35rem 0; }
   .nav-links .theme-toggle { margin: 0.35rem 0; justify-self: center; }
+
+  /* Mobile: place hamburger at far right and theme toggle to its left */
+  nav { position: relative; }
+  .nav-toggle {
+    position: absolute; top: 0.8rem; right: 0.9rem; z-index: 80;
+    display: grid; place-items: center; width: 44px; height: 44px;
+  }
+  /* theme toggle sits left of hamburger (leave space for hamburger) */
+  .theme-toggle {
+    position: absolute; top: 0.8rem; right: 3.8rem; z-index: 75;
+    width: 40px; height: 40px; display: grid; place-items: center;
+  }
 }
 
 /* Desktop: align brand + nav to the left and make nav items + toggle have equal padding */
