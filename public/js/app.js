@@ -114,4 +114,41 @@ async function initTeam() {
 document.addEventListener("DOMContentLoaded", () => {
   initCarousel();
   initTeam();
+  // Nav hamburger toggle
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.querySelector("nav .nav-links");
+  if (navToggle && navLinks) {
+    // Ensure hamburger is only interactive on small screens
+    const mq = window.matchMedia("(max-width: 720px)");
+    const applyVisibility = () => {
+      const isMobile = mq.matches;
+      navToggle.hidden = !isMobile;
+      if (!isMobile) {
+        navLinks.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    };
+    applyVisibility();
+    mq.addEventListener?.("change", applyVisibility);
+
+    navToggle.addEventListener("click", (e) => {
+      const open = navLinks.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    // close when a link is clicked (mobile)
+    navLinks.addEventListener("click", (e) => {
+      const target = e.target.closest("a");
+      if (target && navLinks.classList.contains("open")) {
+        navLinks.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+    // close on outside click
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest("nav") && navLinks.classList.contains("open")) {
+        navLinks.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 });
