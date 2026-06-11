@@ -141,6 +141,47 @@ nav {
   .nav-links a { padding: 0.8rem 0.6rem; display: block; border-radius: 8px; margin: 0.35rem 0; }
   .nav-links .theme-toggle { margin: 0.35rem 0; justify-self: center; }
 }
+
+/* Desktop: align brand + nav to the left and make nav items + toggle have equal padding */
+@media (min-width: 721px) {
+  nav { justify-content: flex-start; }
+  /* center nav-links horizontally in the nav on desktop */
+  .nav-links {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    margin-left: 0; justify-content: center;
+    z-index: 60;
+  }
+  .nav-links a, .nav-links .theme-toggle {
+    padding: 0.6rem 0.9rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  /* override circular theme-toggle on desktop so it matches link padding */
+  .nav-links .theme-toggle {
+    width: auto; height: auto; min-width: 44px; min-height: 36px; font-size: 1rem;
+    border-radius: 8px;
+  }
+  /* hide hamburger on desktop (defensive) */
+  .nav-toggle { display: none !important; }
+}
+
+/* Desktop: make the theme toggle float at the top-right corner */
+@media (min-width: 721px) {
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 70;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    background: var(--card);
+  }
+  /* ensure the toggle inside nav doesn't affect layout (fixed removes from flow)
+     and keep nav links spacing consistent */
+  nav .theme-toggle { margin: 0; }
+}
 .theme-toggle:hover { transform: rotate(20deg) scale(1.08); }
 
 /* ---------------- Marquee ---------------- */

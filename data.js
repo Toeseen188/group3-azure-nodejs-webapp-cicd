@@ -106,41 +106,7 @@ const team = [
     photo: "Daniel_Fiwa.jpg",          // <- remove the // and use your file name in public/assets/team/
     bio: 'Agricultural and Environmental Engineer with interest in precision agriculture, machine design, and food systems. Currently building skills in cloud computing, python programming, and project writing. I am focused on creating impactful systems that improve agricultural productivity, support rural development, and advance sustainable industrial growth in Nigeria and beyond.',
   },
-  {
-    name: 'Member Eight',
-    role: 'Site Reliability Engineer',
-    bestCP: 'Azure',
-    // photo: "member-eight.jpg",          // <- remove the // and use your file name in public/assets/team/
-    bio: 'Replace me with your own bio (up to 150 words).',
-  },
-  {
-    name: 'Member Nine',
-    role: 'UI/UX Designer',
-    bestCP: 'Azure',
-    // photo: "member-nine.jpg",           // <- remove the // and use your file name in public/assets/team/
-    bio: 'Replace me with your own bio (up to 150 words).',
-  },
-  {
-    name: 'Member Ten',
-    role: 'Documentation Lead',
-    bestCP: 'Azure',
-    // photo: "member-ten.jpg",            // <- remove the // and use your file name in public/assets/team/
-    bio: 'Replace me with your own bio (up to 150 words).',
-  },
-  {
-    name: 'Member Eleven',
-    role: 'Scrum Master',
-    bestCP: 'Azure',
-    // photo: "member-eleven.jpg",         // <- remove the // and use your file name in public/assets/team/
-    bio: 'Replace me with your own bio (up to 150 words).',
-  },
-  {
-    name: 'Member Twelve',
-    role: 'Data Engineer',
-    bestCP: 'Azure',
-    // photo: "member-twelve.jpg",         // <- remove the // and use your file name in public/assets/team/
-    bio: 'Replace me with your own bio (up to 150 words).',
-  },
+  // Removed placeholder members 8-12 per request.
 ]
 
 module.exports = { providers, team }
