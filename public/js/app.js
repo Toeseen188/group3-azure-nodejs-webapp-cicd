@@ -98,7 +98,7 @@ async function initTeam() {
       .map(
         (m) => `
         <div class="member">
-          <div class="avatar"><img src="${m.avatar}" alt="${m.name}"></div>
+          <div class="avatar"><img src="${m.avatar}" alt="${m.name}"${m.avatar.startsWith('/') ? ' data-is-photo="true"' : ''}></div>
           <h3>${m.name}</h3>
           <div class="role">${m.role}</div>
           <p class="bio">${m.bio}</p>
@@ -106,6 +106,7 @@ async function initTeam() {
         </div>`
       )
       .join("");
+    applyFaceDetection();
   } catch (e) {
     grid.innerHTML = '<div class="loading">Could not load the team.</div>';
   }
@@ -115,3 +116,62 @@ document.addEventListener("DOMContentLoaded", () => {
   initCarousel();
   initTeam();
 });
+
+async function applyFaceDetection() {
+  if (typeof faceapi === 'undefined') return;
+  try {
+    await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
+  } catch (err) {
+    return;
+  }
+  const imgs = Array.from(document.querySelectorAll('.member .avatar img[data-is-photo]'));
+  await Promise.all(imgs.map(img => detectAndPosition(img)));
+}
+
+async function detectAndPosition(img) {
+  await new Promise(resolve => {
+    if (img.complete && img.naturalWidth > 0) return resolve();
+    img.addEventListener('load', resolve, { once: true });
+    img.addEventListener('error', resolve, { once: true });
+  });
+
+  let detection;
+  try {
+    detection = await faceapi.detectSingleFace(
+      img,
+      new faceapi.TinyFaceDetectorOptions({ inputSize: 224, scoreThreshold: 0.5 })
+    );
+  } catch { return; }
+
+  if (!detection) return;
+
+  const box = detection.box;
+  const W = img.naturalWidth;
+  const H = img.naturalHeight;
+  const CONTAINER = 84;
+
+  // Already a close-up / passport-shaped — just center it
+  if (box.height / H > 0.4 || box.width / W > 0.4) {
+    img.style.objectPosition = '50% 50%';
+    return;
+  }
+
+  // Passport-style: show head + a bit of shoulders, more padding above than below
+  const padTop    = box.height * 0.45;
+  const padBottom = box.height * 0.25;
+
+  const cropCX = box.x + box.width / 2;
+  const cropCY = box.y - padTop + (box.height + padTop + padBottom) / 2;
+
+  const scale    = Math.max(CONTAINER / W, CONTAINER / H);
+  const overflowX = W * scale - CONTAINER;
+  const overflowY = H * scale - CONTAINER;
+
+  let posX = overflowX > 0 ? ((cropCX * scale) - CONTAINER / 2) / overflowX * 100 : 50;
+  let posY = overflowY > 0 ? ((cropCY * scale) - CONTAINER / 2) / overflowY * 100 : 50;
+
+  posX = Math.max(0, Math.min(100, posX));
+  posY = Math.max(0, Math.min(100, posY));
+
+  img.style.objectPosition = `${posX.toFixed(1)}% ${posY.toFixed(1)}%`;
+}
